@@ -66,4 +66,8 @@
     height: 400px;
     width: 350px;
   }
+p {
+  width: 75%;
+  margin: 0 auto;
+}
 

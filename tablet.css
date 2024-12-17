@@ -1,0 +1,68 @@
+@media (max-width: 1024px){
+  .menu-container{
+    width:100%;
+    height: 80px;
+    color: #776E8A;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+  }
+  .menu div{
+    margin-left: 20px;
+  }
+  .about {
+    padding: 20px;
+    align-items:center;
+    justify-content: center;
+    height: auto;
+   }
+   .content{
+      width: 100%;
+      margin-left: 0;
+   }
+   .left-cards,.right-cards{
+    width:100%
+  }
+    .card-item{
+      width: 96%;
+    }
+    .contact-info{
+      border-left: none;
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+    .contact-text{
+      flex-direction: column;
+    }
+    .menu-item a::after {
+      left: 1;
+      width: auto;
+    }
+    .menu-item a.active::after {
+      animation: gradient-move 0.5s forwards;;
+      background: linear-gradient(50deg, #b494f9, #5621dc);
+    }
+    @keyframes gradient-move {
+    from {
+      width: 0%;
+    }
+    to {
+       width: 100%; 
+    }
+  }
+  .carousel{
+    z-index: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px){
+  .contact-block{
+    display: flex;
+    flex-direction: column;
+  }
+}

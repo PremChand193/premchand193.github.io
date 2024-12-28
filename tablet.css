@@ -18,8 +18,8 @@
   }
   .about {
     padding: 20px;
-    align-items:center;
-    justify-content: center;
+    align-items:flex-start;
+    justify-content: flex-start;
     height: auto;
    }
    .content{

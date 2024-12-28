@@ -83,6 +83,29 @@ html {
   align-items: flex-start;
   justify-content: center;
 }
+.me {
+  border-right: 5px solid;
+  width: 100%;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.typing {
+  animation: typing 2s steps(24) forwards, cursor 0.4s step-end infinite alternate !important;
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes cursor {
+  50% {
+    border-right: transparent;
+  }
+}
 .btn{
     border-radius: 25px;
     background: transparent;

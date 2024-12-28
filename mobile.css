@@ -34,9 +34,12 @@
   }
   .about {
  padding: 20px;
- align-items:center;
- justify-content: center;
+ align-items:flex-start;
+ justify-content: flex-start;
  height: auto;
+  }
+  .me {
+    letter-spacing: 5px;
   }
 
   /* Education blocks adjustment */

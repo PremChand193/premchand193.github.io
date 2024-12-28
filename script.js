@@ -5,7 +5,17 @@ function openModal(modalId) {
 function closeModal(modalId) {
   document.getElementById(modalId).style.display = "none";
 }
-
+let myself = ['Prem Chand','Website Developer'];
+let i = 0;
+const me = document.querySelector('.me');
+function updateText() {
+  me.textContent = myself[i];
+  me.classList.remove('typing'); 
+  void me.offsetWidth; 
+  me.classList.add('typing'); 
+  i = (i + 1) % myself.length;
+}
+setInterval(updateText, 2500);
 window.onclick = function(event) {
   const modals = document.querySelectorAll('.modal');
   modals.forEach(modal => {

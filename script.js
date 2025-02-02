@@ -5,7 +5,7 @@ function openModal(modalId) {
 function closeModal(modalId) {
   document.getElementById(modalId).style.display = "none";
 }
-let myself = ['Prem Chand','Website Developer'];
+let myself = ['Prem Chand','Web Developer'];
 let i = 0;
 const me = document.querySelector('.me');
 function updateText() {
